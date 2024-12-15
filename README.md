@@ -44,7 +44,7 @@ xmysrat/
 
 Use !help for a list of commands, it already explains everything as it is.
 !help [command] for a command. Already lists everything down for you.
-if you need more help, contact me, repr1ize on Discord.]
+if you need more help, contact me, 0themystic0 on Discord.]
 
 ## 🤝 Contributors
 - 0themystic0(Me) for Developing, Concepts, Coding, and Ideas
