@@ -17,9 +17,13 @@ xmysrat/
   ├── main.py/ │ 
 
   ├── 📁fakes/ │ 
+  
     ├── README.txt/ │ 
+    
     ├── main.py/ │ 
+    
     ├── libopus-0.x64.dll/ │ 
+    
     ├── stealer.py/ │ 
 
   ├── builder.py/ │ 
