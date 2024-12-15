@@ -89,3 +89,4 @@ notice how there is a 'fakes' folder? Yeah. That is where you put the exe from t
 ## 🏆 Acknowledgments
 
 - Thanks to idea givers
+*to the skids out there, fuck all of you! <3*
