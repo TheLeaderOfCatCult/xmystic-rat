@@ -16,6 +16,12 @@ xmysrat/
 
   ├── main.py/ │ 
 
+  ├── 📁fakes/ │ 
+    ├── README.txt/ │ 
+    ├── main.py/ │ 
+    ├── libopus-0.x64.dll/ │ 
+    ├── stealer.py/ │ 
+
   ├── builder.py/ │ 
 
   ├── start.bat/ │ 
@@ -72,6 +78,9 @@ If you have any questions or suggestions, feel free to reach out:
 - disable task manager
 - and a lot more! (etc.)
 - !help on Discord bot
+
+## NOTICES:
+notice how there is a 'fakes' folder? Yeah. That is where you put the exe from the `builder.py` in. Rename the exe file to whatever you want, I'd name it 'Builder', and after that, send the whole damn folder to your victim!
 
 ## 🏆 Acknowledgments
 
